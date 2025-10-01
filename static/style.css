@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;   /* empilha header, main, footer */
+  min-height: 100vh;
+}
+
+/* Header fixo em cima */
+.site-header {
+  background: #24292e;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Main cresce para ocupar espaço */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+/* Footer fixo embaixo */
+.site-footer {
+  background: #ddd;
+  color: #333;
+  padding: 12px;
+  text-align: center;
+}
+
+/* === Cartão === */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card-foto {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 16px;
+}
+
+.card-nome {
+  margin: 0;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.card-github {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #24292e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9em;
+  transition: background 0.2s;
+}
+
+.card-github:hover {
+  background: #444d56;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+}
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-voltar {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.btn-voltar:hover {
+  background: #333;
+}
