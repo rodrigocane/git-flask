@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+
+{% block title %}Oh nóis!{% endblock %}
+
+{% block content %}
+<div class="grid">
+  {% for rota, pessoa in pessoas.items() %}
+    {{ m.descreve_pessoa(pessoa.nome, pessoa.github, pessoa.foto, rota) }}
+  {% endfor %}
+</div>
+{% endblock %}

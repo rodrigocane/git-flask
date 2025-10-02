@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+
+{% block title %}Cartão - {{ pessoa.nome }}{% endblock %}
+
+{% block content %}
+  <div class="perfil">
+    {{ m.descreve_pessoa(pessoa.nome, pessoa.github, pessoa.foto) }}
+    <a href="/" class="btn-voltar">← Voltar</a>
+  </div>
+{% endblock %}
