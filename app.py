@@ -25,5 +25,3 @@ def index():
 
 if __name__ == "__main__":
     app.run(port=5506, debug=True)
-
-"""Orgulho do meu amigo Cane, que me ajudou a aprender Flask!"""
