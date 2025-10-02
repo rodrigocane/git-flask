@@ -3,7 +3,6 @@ from pessoa import *
 
 app = Flask(__name__)
 
-
 def cartao_pessoa(rota_pessoa):
     pessoa = pessoas.get(rota_pessoa)
     if not pessoa:
@@ -26,3 +25,5 @@ def index():
 
 if __name__ == "__main__":
     app.run(port=5506, debug=True)
+
+"""Orgulho do meu amigo Cane, que me ajudou a aprender Flask!"""

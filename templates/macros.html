@@ -1,0 +1,17 @@
+{% macro descreve_pessoa(nome, github, foto, rota=None) %}
+<div class="card">
+  {% if rota %}
+    <a href="/{{ rota }}">
+      <img class="card-foto" src="{{ foto }}" alt="Foto de {{ nome }}">
+    </a>
+  {% else %}
+    <img class="card-foto" src="{{ foto }}" alt="Foto de {{ nome }}">
+  {% endif %}
+  <div class="card-info">
+    <h2 class="card-nome">{{ nome }}</h2>
+    <a class="card-github" href="{{ github }}" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+</div>
+{% endmacro %}
